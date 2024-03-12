@@ -1,6 +1,239 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Hello World</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <script src="js/custom.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal website of Prathik Prasad">
+        <meta name="author" content="Prathik Prasad">
+        <meta name="keywords" content="Prathik Prasad,grad student" />
+
+        <title> Prathik Prasad's homepage </title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        
+
+    </head>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#overview">Overview</a>
+        <a href="#research-work-ex">Research/Work Experience</a>
+        <a href="#courses">Courses</a>
+        <a href="#research-projects">Research Projects</a>
+        <a href="#other-projects">Personal Projects</a>
+        <a href="#hobbies">Hobbies</a>
+    </div>
+
+    <body>
+
+
+        <span id="hamburger-menu" class="hamburger-menu" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </span>
+        
+        <br/><br/>
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-sm-8 pad-top">
+                    <h2> Prathik Prasad </h2>
+                    <p>
+                        <a href="https://schulich.ucalgary.ca/chemical-petroleum/home" target="_blank"> Department of Chemical Engineering
+                        </a> <br/>
+                        <a href="https://www.ucalgary.ca" target="_blank"> University of Calgary, Calgary
+                        </a> <br/>
+                        <strong>prathikprasad@gmail.com</strong>
+                        <br/>
+                        <a href="Files/Prathik Prasad Resume.pdf" target="_blank">Resume</a>
+                    </p>
+                </div>
+                <div class="col-sm-4 pad-top">
+                    <center>
+                        <img src="img/prathik.jpeg" alt="Prathik Prasad" height="280px" width="280px"></img>
+                    </center>
+                </div>
+            </div>
+
+            <br/>
+            <span class="divider"></span>
+
+            <div id="overview" class="row">
+                <br/><br/>
+                <h3> Overview </h3>
+                <p>
+                    I am a grad student at University of Calgary pursuing my Master's in Chemical Engineering, specializing
+                    in Data Science and  Machine Learning<br/>
+                    I received my Bachelor's in Oil and Gas Engineering from
+                    <a href="https://www.ucalgary.ca" target="_blank"> University of Calgary, Calgary. </a> <br/>
+                    I'm very passionate about data scince,machine learning and artificial intelligence, specifically in neural networks, deep learning.
+                </p>
+            </div>
+
+            <div id="research-work-ex" class="row">
+                <br/><br/>
+                <h3> Research/Work Experience </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4> Energi Simulation Center for Geothermal Research, University of Calgary</h4>
+                        <p>
+                            Built a data dashboard to visualise key drilling paramaters and their impact on drilling efficiency.Conducted analysis on the physics based rpm-prediction model 
+                            'Soft Sensor', discovering variation in motor rpm basedon the stand of the Bottom hole assembly
+                        </p>
+                    </li>
+                    <li>
+                        <h4> Beoflow, Remote:</h4>
+                        <p>
+                            Built a video analysis tool to detect a athletes stride pattern while skating using python and streamlit. Wrote a Novel algorithm to detect a athletes fitness level without the necessity of lab testing.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div id="publications" class="row">
+                <br/><br/>
+                <h3> Publications </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4>
+                            Standards based Integration of Advanced Key Management Capabilities with Openstack
+                            <small>
+                                <a target="_blank" href="http://ieeexplore.ieee.org/document/7436938/">
+                                    (ieeexplore)
+                                </a>
+                            </small>
+                        </h4>
+                        <p>
+                            D. Sitaram, S. Harwalkar, S. Iyer, S. Jha, U. Simha <br/>
+                            <i>IEEE CCEM 2015, Bangalore </i>
+                        </p>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div id="courses" class="row">
+                <br/><br/>
+                <h3> Courses </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        ENEN 645: Data Mining and Machine Learning
+                    </li>
+                    <li>
+                        ENEN 671: Energy and Environment
+                    </li>
+                    <li>
+                        ENCH 701: Advanced Statistical Methods
+                    </li>
+                    <li>
+                        ENEN 693: Quantitative Methods for Sustainable design
+                    </li>
+                    <li>
+                        GOPH 517: Geophysical Signal Processing
+                    </li>
+                    <li>
+                        ENPE 515: Drilling and Well Completions
+                    </li>
+                    <li>
+                        IISc 101 : Introduction to Deep Learning
+                    </li>
+                    <li>
+                        Teaching Assistantship - ENCH 331: Fluid Dynamics
+                    </li>
+                    <li>
+                        Teaching Assistantship - ENCH 403: Heat Transfer
+                    </li>
+                </ul>
+            </div>
+
+            <div id="research-projects" class="row">
+                <br/><br/>
+                <h3> Research Projects </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4> Data Science Approach to Borehole Dysfunction analysis (Master's thesis):</h4>
+                        <ul>
+                            <li> The project aims at estimating the dysfunction alaong a borehole using the hook load data </li>
+                            <li> For example, given a well with high tortuosity and various problematic areas,we want to get a better depth resolution of these areas. </li>
+                            <li> For this, we use advanced signal processing techniques to deconvolve the given data to pin point the dysfunction along a borehole. </li>
+                            <li> Code for this can be found <a href="https://github.com/Prathik24/Hookload_Analysis">here </a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Development of Autonomous Drilling Rig :</h4>
+                        <ul>
+                            <li> The project aims at bulding an rig which can drill a directional well autonmously </li>
+                            <li> Build a matlab model to control the rig, and gather data for the machine learning model.</li>
+                            <li> Used Solid works to design all the parts, and implemetned a fluid system to clean out the drilled hole </li>
+                            <li> Code for this can be found <a href="">here </a> </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <h4> Deep Neural Networks for speech recognition </h4>
+                        <ul>
+                            <li> The project aims at using deep neural networks for the task of automatic speech recognition </li>
+                            <li> Tried various architectures such as vanilla feed-forward neural networks, end-to-end recurrent neural networks etc. </li>
+                            <li> The final architecture was based on a end-to-end recurrent neural network which uses Connectionist Temporal Classification (CTC) loss and a beam search mechanism for predicting phonemes </li>
+                            <li> Code can be found <a href="https://github.com/utkarshsimha/dnn-speech-recognition" >here</a> </li>
+                        </ul>
+                    </li> -->
+<!--                     <li>
+                        <h4> Standards based integration of Advanced Key Management Capabilities with Openstack </h4>
+                        <ul>
+                            <li> The project aims at integrating Openstack and enterprise key lifecylce managers, such as IBM Security Key Lifecycle Manager (IBM SKLM), using standardized protocols such as Key Management Interoperability Protocol (KMIP) </li>
+                            <li> Used a server-side plugin architecture to translate KMIP requests received by Barbican (the key manager for Openstack) and delegate it to any enterprise key lifecycle manager that has been interfaced</li>
+                            <li> Successfully demonstrated an end-to-end scenario for important key operations. Submitted and presented a white paper based on the project at IEEE International Conference on Cloud Computing and Emerging Markets 2015 which was accepted for poster presentation </li>
+                            <li> Link to paper can be found <a target="_blank" href="http://ieeexplore.ieee.org/document/7436938/"> here </a> </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div id="other-projects" class="row">
+                <br/><br/>
+                <h3> Personal Projects </h3>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <h4> Ensembale model for Emotion Classification </h4>
+                        Built a ensmeble model for the task of speech recognition. The model classified 8 different emotions based on a given audio file. This can be used to moderate hostile language based audio/vedio files. Code for this can be found <a>here.</a>
+                    </li>
+                    <li>
+                        <h4> Credit risk modelling Logistic Regression </h4>
+                        Worked in a team to streamline data exploration, preprocessing, and visualization for a credit dataset, developed
+                        and evaluated a Logistic Regression model, and created an accurate credit scoring system to predict loan repayment
+                        likelihood.     
+                    </li>
+                    <li>
+                        <h4> SPE Geothermal Datathon</h4>
+                        Worked together with a team to build a DBSCAN algorithm to cluster discrete fracture network in a given reservoir. 
+                        We implemented the algorithm to assess the life of a reservoir based on the given production rates.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="hobbies" class="row">
+                <br/><br/>
+                <h3> Hobbies </h3>
+                <p>
+                    I was a professional speed skater for 15 years,and a Indian team member for ten years. I have won multiple national and international medals.
+                    <br/><br/>
+                    I am also an ardent trekker. I have trekked to Everest Base Camp, Dafey bhir in the Himalayas, and many
+                    smaller treks in and around Karnataka and the Rockies.
+                </p>
+            </div>
+
+            <span class="divider"></span>
+            <br/><br/>
+
+            <footer>
+                &copy; Prathik Prasad 2024
+                <br/>
+                <i>Last updated:12th, March 2024</i>
+            </footer>
+        <!-- </div> -->
+    </body>
 </html>
