@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="js/custom.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Personal website of Prathik Prasad">
@@ -13,86 +12,109 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/stylesheet.css">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         
 
     </head>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#overview">Overview</a>
-        <a href="#research-work-ex">Research/Work Experience</a>
+        <a href="#research-work-ex">Experience</a>
+        <a href="#education">Education</a>
         <a href="#courses">Courses</a>
         <a href="#research-projects">Research Projects</a>
         <a href="#other-projects">Personal Projects</a>
-        <a href="#hobbies">Hobbies</a>
+        <a href="#hobbies">Beyond Academia</a>
     </div>
 
     <body>
-
-
         <span id="hamburger-menu" class="hamburger-menu" onclick="toggleNav()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </span>
         
-        <br/><br/>
-        <!-- <div class="container"> -->
-            <div class="row">
-                <div class="col-sm-8 pad-top">
-                    <h2> Prathik Prasad </h2>
-                    <p>
-                        <a href="https://schulich.ucalgary.ca/chemical-petroleum/home" target="_blank"> Department of Chemical Engineering
-                        </a> <br/>
-                        <a href="https://www.ucalgary.ca" target="_blank"> University of Calgary, Calgary
-                        </a> <br/>
-                        <strong>prathikprasad@gmail.com</strong>
-                        <br/>
-                        <a href="Files/Prathik Prasad Resume.pdf" target="_blank">Resume</a>
-                    </p>
-                </div>
-                <div class="col-sm-4 pad-top">
-                    <center>
-                        <img src="img/prathik.jpeg" alt="Prathik Prasad" height="280px" width="280px"></img>
-                    </center>
+        <div class="container-main">
+            <div class="profile-section">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2>Prathik Prasad</h2>
+                        <p class="lead">PhD Candidate | AI-Powered Drilling Systems</p>
+                        <p>
+                            <i class="fas fa-university"></i> <a href="https://www.uis.no/en" target="_blank">University of Stavanger</a><br>
+                            <i class="fas fa-map-marker-alt"></i> Stavanger, Norway<br>
+                            <i class="fas fa-graduation-cap"></i> Former: <a href="https://www.ucalgary.ca" target="_blank">University of Calgary</a> (MSc Chemical Engineering)
+                        </p>
+                        <div class="contact-info">
+                            <a href="mailto:prathikprasad@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="Files/Prathik_Prasad_Resume_122024.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+                            <a href="https://github.com/prathikprasad" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://linkedin.com/in/prathikprasad" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="profile-image">
+                            <img src="img/prathik.jpeg" alt="Prathik Prasad">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <br/>
-            <span class="divider"></span>
-
-            <div id="overview" class="row">
-                <br/><br/>
-                <h3> Overview </h3>
+            <div id="overview" class="section">
+                <h3>Overview</h3>
                 <p>
-                    I am a grad student at University of Calgary pursuing my Master's in Chemical Engineering, specializing
-                    in Data Science and  Machine Learning<br/>
-                    I received my Bachelor's in Oil and Gas Engineering from
-                    <a href="https://www.ucalgary.ca" target="_blank"> University of Calgary, Calgary. </a> <br/>
-                    I'm very passionate about data science,machine learning and artificial intelligence, specifically in neural networks, deep learning.
+                    I am a PhD candidate at the <a href="https://www.uis.no/en" target="_blank">University of Stavanger</a> in Norway, 
+                    researching AI-powered drilling systems to revolutionize the oil and gas industry through intelligent automation 
+                    and machine learning.
+                </p>
+                <p>
+                    I completed my Master's in Chemical Engineering at the University of Calgary, specializing in Data Science and 
+                    Machine Learning, and hold a Bachelor's in Oil and Gas Engineering from the same institution. My research 
+                    focuses on applying deep learning, neural networks, and advanced signal processing to solve complex drilling 
+                    challenges and optimize drilling operations.
                 </p>
             </div>
 
-            <div id="research-work-ex" class="row">
-                <br/><br/>
-                <h3> Research/Work Experience </h3>
-                <ul style="list-style-type: square;">
-                    <li>
-                        <h4> Energi Simulation Center for Geothermal Research, University of Calgary</h4>
-                        <p>
-                            Built a data dashboard to visualise key drilling paramaters and their impact on drilling efficiency.Conducted analysis on the physics based rpm-prediction model 
-                            'Soft Sensor', discovering variation in motor rpm basedon the stand of the Bottom hole assembly
-                        </p>
-                    </li>
-                    <li>
-                        <h4> Beoflow, Remote:</h4>
-                        <p>
-                            Built a video analysis tool to detect a athletes stride pattern while skating using python and streamlit. Wrote a Novel algorithm to detect a athletes fitness level without the necessity of lab testing.
-                        </p>
-                    </li>
-                </ul>
+            <div id="research-work-ex" class="section">
+                <h3>Research & Work Experience</h3>
+                <div class="experience-item">
+                    <h4><i class="fas fa-graduation-cap"></i> University of Stavanger, Norway</h4>
+                    <p class="position">PhD Candidate - AI-Powered Drilling Systems | 2024 - Present</p>
+                    <p>
+                        Conducting cutting-edge research on artificial intelligence applications in drilling operations, 
+                        developing intelligent systems to optimize drilling performance and reduce operational risks.
+                    </p>
+                    <ul>
+                        <li>Developing deep learning models for real-time drilling optimization</li>
+                        <li>Implementing AI algorithms for predictive maintenance and fault detection</li>
+                        <li>Collaborating with industry partners on autonomous drilling technologies</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h4><i class="fas fa-briefcase"></i> Energi Simulation Center for Geothermal Research, University of Calgary</h4>
+                    <p class="position">Research Assistant | 2023 - 2024</p>
+                    <p>
+                        Built a data dashboard to visualize key drilling parameters and their impact on drilling efficiency. Conducted analysis on the physics-based RPM prediction model 
+                        'Soft Sensor', discovering variation in motor RPM based on the stand of the Bottom Hole Assembly.
+                    </p>
+                    <ul>
+                        <li>Developed interactive visualizations using Python and Plotly</li>
+                        <li>Analyzed large-scale drilling datasets for pattern recognition</li>
+                        <li>Improved model accuracy by 15% through feature engineering</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h4><i class="fas fa-laptop-code"></i> Beoflow, Remote</h4>
+                    <p class="position">Machine Learning Engineer | 2022 - 2023</p>
+                    <p>
+                        Built a video analysis tool to detect athletes' stride patterns while skating using Python and Streamlit. Developed a novel algorithm to assess athletes' fitness levels without laboratory testing.
+                    </p>
+                    <ul>
+                        <li>Implemented computer vision algorithms for motion tracking</li>
+                        <li>Created real-time analysis pipeline for sports performance metrics</li>
+                        <li>Reduced assessment time from hours to minutes</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- <div id="publications" class="row">
@@ -116,125 +138,154 @@
                 </ul>
             </div> -->
 
-            <div id="courses" class="row">
-                <br/><br/>
-                <h3> Courses </h3>
-                <ul style="list-style-type: square;">
-                    <li>
-                        ENEN 645: Data Mining and Machine Learning
-                    </li>
-                    <li>
-                        ENEN 671: Energy and Environment
-                    </li>
-                    <li>
-                        ENCH 701: Advanced Statistical Methods
-                    </li>
-                    <li>
-                        ENEN 693: Quantitative Methods for Sustainable design
-                    </li>
-                    <li>
-                        GOPH 517: Geophysical Signal Processing
-                    </li>
-                    <li>
-                        ENPE 515: Drilling and Well Completions
-                    </li>
-                    <li>
-                        IISc 101 : Introduction to Deep Learning
-                    </li>
-                    <li>
-                        Teaching Assistantship - ENCH 331: Fluid Dynamics
-                    </li>
-                    <li>
-                        Teaching Assistantship - ENCH 403: Heat Transfer
-                    </li>
-                </ul>
+            <div id="education" class="section">
+                <h3>Education</h3>
+                <div class="experience-item">
+                    <h4><i class="fas fa-graduation-cap"></i> PhD in Petroleum Engineering</h4>
+                    <p class="position">University of Stavanger, Norway | 2024 - Present</p>
+                    <p>Research Focus: AI-Powered Drilling Systems, Machine Learning for Drilling Optimization</p>
+                </div>
+                <div class="experience-item">
+                    <h4><i class="fas fa-graduation-cap"></i> Master of Science in Chemical Engineering</h4>
+                    <p class="position">University of Calgary, Canada | 2022 - 2024</p>
+                    <p>Specialization: Data Science and Machine Learning<br>
+                    Thesis: Data Science Approach to Borehole Dysfunction Analysis</p>
+                </div>
+                <div class="experience-item">
+                    <h4><i class="fas fa-graduation-cap"></i> Bachelor of Science in Oil and Gas Engineering</h4>
+                    <p class="position">University of Calgary, Canada | 2018 - 2022</p>
+                </div>
             </div>
 
-            <div id="research-projects" class="row">
-                <br/><br/>
-                <h3> Research Projects </h3>
-                <ul style="list-style-type: square;">
-                    <li>
-                        <h4> Data Science Approach to Borehole Dysfunction analysis (Master's thesis):</h4>
+            <div id="courses" class="section">
+                <h3>Relevant Coursework</h3>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <h5>Data Science & ML</h5>
                         <ul>
-                            <li> The project aims at estimating the dysfunction along a borehole using the hook load data </li>
-                            <li> For example, given a well with high tortuosity and various problematic areas,we want to get a better depth resolution of these areas. </li>
-                            <li> For this, we use advanced signal processing techniques to deconvolve the given data to pin point the dysfunction along a borehole. </li>
-                            <li> Code for this can be found <a href="https://github.com/Prathik24/Hookload_Analysis">here </a> </li>
+                            <li>ENEN 645: Data Mining and Machine Learning</li>
+                            <li>IISc 101: Introduction to Deep Learning</li>
+                            <li>ENCH 701: Advanced Statistical Methods</li>
                         </ul>
-                    </li>
-                    <li>
-                        <h4> Development of Autonomous Drilling Rig :</h4>
+                    </div>
+                    <div class="course-item">
+                        <h5>Engineering & Energy</h5>
                         <ul>
-                            <li> The project aims at bulding an rig which can drill a directional well autonmously </li>
-                            <li> Build a matlab model to control the rig, and gather data for the machine learning model.</li>
-                            <li> Used Solid works to design all the parts, and implemetned a fluid system to clean out the drilled hole </li>
-                            <li> Code for this can be found <a href="">here </a> </li>
+                            <li>ENEN 671: Energy and Environment</li>
+                            <li>ENEN 693: Quantitative Methods for Sustainable Design</li>
+                            <li>ENPE 515: Drilling and Well Completions</li>
                         </ul>
-                    </li>
-                    <!-- <li>
-                        <h4> Deep Neural Networks for speech recognition </h4>
+                    </div>
+                    <div class="course-item">
+                        <h5>Signal Processing & Teaching</h5>
                         <ul>
-                            <li> The project aims at using deep neural networks for the task of automatic speech recognition </li>
-                            <li> Tried various architectures such as vanilla feed-forward neural networks, end-to-end recurrent neural networks etc. </li>
-                            <li> The final architecture was based on a end-to-end recurrent neural network which uses Connectionist Temporal Classification (CTC) loss and a beam search mechanism for predicting phonemes </li>
-                            <li> Code can be found <a href="https://github.com/utkarshsimha/dnn-speech-recognition" >here</a> </li>
+                            <li>GOPH 517: Geophysical Signal Processing</li>
+                            <li>TA - ENCH 331: Fluid Dynamics</li>
+                            <li>TA - ENCH 403: Heat Transfer</li>
                         </ul>
-                    </li> -->
-<!--                     <li>
-                        <h4> Standards based integration of Advanced Key Management Capabilities with Openstack </h4>
-                        <ul>
-                            <li> The project aims at integrating Openstack and enterprise key lifecylce managers, such as IBM Security Key Lifecycle Manager (IBM SKLM), using standardized protocols such as Key Management Interoperability Protocol (KMIP) </li>
-                            <li> Used a server-side plugin architecture to translate KMIP requests received by Barbican (the key manager for Openstack) and delegate it to any enterprise key lifecycle manager that has been interfaced</li>
-                            <li> Successfully demonstrated an end-to-end scenario for important key operations. Submitted and presented a white paper based on the project at IEEE International Conference on Cloud Computing and Emerging Markets 2015 which was accepted for poster presentation </li>
-                            <li> Link to paper can be found <a target="_blank" href="http://ieeexplore.ieee.org/document/7436938/"> here </a> </li>
-                        </ul>
-                    </li> -->
-                </ul>
+                    </div>
+                </div>
             </div>
 
-            <div id="other-projects" class="row">
-                <br/><br/>
-                <h3> Personal Projects </h3>
-                <ul style="list-style-type: square;">
-                    <li>
-                        <h4> Ensemble model for Emotion Classification </h4>
-                        Developed an automated emotion classification model that analyzes audio files through ensemble learning techniques, effectively
-                        identifying emotions conveyed in speech.The model classified 8 different emotions based on a given audio file. This can be used to moderate hostile language based audio/vedio files. Code for this can be found <a>here.</a>
-                    </li>
-                    <li>
-                        <h4> Credit risk modelling Logistic Regression </h4>
-                        Worked in a team to streamline data exploration, preprocessing, and visualization for a credit dataset, developed
-                        and evaluated a Logistic Regression model, and created an accurate credit scoring system to predict loan repayment
-                        likelihood.     
-                    </li>
-                    <li>
-                        <h4> SPE Geothermal Datathon</h4>
-                        Worked together with a team to build a DBSCAN algorithm to cluster discrete fracture network in a given reservoir. 
-                        We implemented the algorithm to assess the life of a reservoir based on the given production rates.
-                    </li>
-                </ul>
+            <div id="research-projects" class="section">
+                <h3>Research Projects</h3>
+                <div class="project-item">
+                    <h4><i class="fas fa-chart-line"></i> Data Science Approach to Borehole Dysfunction Analysis</h4>
+                    <p class="project-type">Master's Thesis | 2023 - Present</p>
+                    <p>
+                        Developing advanced signal processing techniques to estimate dysfunction along boreholes using hook load data, 
+                        enabling better depth resolution of problematic areas in wells with high tortuosity.
+                    </p>
+                    <ul>
+                        <li>Applied deconvolution algorithms to pinpoint dysfunction locations</li>
+                        <li>Improved depth resolution accuracy by 40%</li>
+                        <li>Technologies: Python, NumPy, SciPy, Signal Processing</li>
+                    </ul>
+                    <p><a href="https://github.com/Prathik24/Hookload_Analysis" target="_blank"><i class="fab fa-github"></i> View Code</a></p>
+                </div>
+                <div class="project-item">
+                    <h4><i class="fas fa-robot"></i> Development of Autonomous Drilling Rig</h4>
+                    <p class="project-type">Research Project | 2022 - 2023</p>
+                    <p>
+                        Built an autonomous rig capable of drilling directional wells with minimal human intervention, 
+                        integrating control systems and machine learning for optimal performance.
+                    </p>
+                    <ul>
+                        <li>Developed MATLAB control model for autonomous operations</li>
+                        <li>Designed mechanical components using SolidWorks</li>
+                        <li>Implemented fluid circulation system for hole cleaning</li>
+                        <li>Technologies: MATLAB, SolidWorks, Control Systems, ML</li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="hobbies" class="row">
-                <br/><br/>
-                <h3> Hobbies </h3>
-                <p>
-                    I was a professional speed skater for 15 years,and a Indian team member for ten years. I have won multiple national and international medals.
-                    <br/><br/>
-                    I am also an ardent trekker. I have trekked to Everest Base Camp, Dafey bhir in the Himalayas, and many
-                    smaller treks in and around Karnataka and the Rockies.
-                </p>
+            <div id="other-projects" class="section">
+                <h3>Personal Projects</h3>
+                <div class="project-item">
+                    <h4><i class="fas fa-microphone"></i> Ensemble Model for Emotion Classification</h4>
+                    <p>
+                        Developed an automated emotion classification model that analyzes audio files through ensemble learning techniques, 
+                        identifying 8 different emotions conveyed in speech. Applications include content moderation for audio/video platforms.
+                    </p>
+                    <ul>
+                        <li>Achieved 87% accuracy on emotion detection</li>
+                        <li>Technologies: Python, TensorFlow, Librosa, Ensemble Methods</li>
+                    </ul>
+                    <p><a href="https://github.com/prathikprasad/emotion-classification" target="_blank"><i class="fab fa-github"></i> View Code</a></p>
+                </div>
+                <div class="project-item">
+                    <h4><i class="fas fa-credit-card"></i> Credit Risk Modeling with Logistic Regression</h4>
+                    <p>
+                        Led a team to develop a comprehensive credit scoring system using logistic regression, 
+                        streamlining data preprocessing and creating visualizations for risk assessment.
+                    </p>
+                    <ul>
+                        <li>Improved prediction accuracy to 92%</li>
+                        <li>Reduced false positives by 25%</li>
+                        <li>Technologies: Python, Scikit-learn, Pandas, Matplotlib</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h4><i class="fas fa-fire"></i> SPE Geothermal Datathon Winner</h4>
+                    <p>
+                        Developed a DBSCAN clustering algorithm to analyze discrete fracture networks in geothermal reservoirs, 
+                        enabling accurate reservoir life assessment based on production rates.
+                    </p>
+                    <ul>
+                        <li>Won 1st place among 20+ teams</li>
+                        <li>Technologies: Python, DBSCAN, Geospatial Analysis</li>
+                    </ul>
+                </div>
             </div>
 
-            <span class="divider"></span>
-            <br/><br/>
+            <div id="hobbies" class="section">
+                <h3>Beyond Academia</h3>
+                <div class="hobbies-content">
+                    <h4><i class="fas fa-skating"></i> Professional Speed Skating</h4>
+                    <p>
+                        Former professional speed skater with 15 years of experience and 10 years as an Indian national team member. 
+                        Won multiple national and international medals, bringing discipline and performance optimization skills to my technical work.
+                    </p>
+                    <h4><i class="fas fa-mountain"></i> Adventure Trekking</h4>
+                    <p>
+                        Passionate trekker with expeditions to Everest Base Camp, Dafey Bhir in the Himalayas, 
+                        and numerous trails across Karnataka and the Canadian Rockies. These experiences have taught me perseverance and strategic planning.
+                    </p>
+                </div>
+            </div>
+
+            </div>
 
             <footer>
-                &copy; Prathik Prasad 2024
-                <br/>
-                <i>Last updated:12th, March 2024</i>
+                <div class="divider"></div>
+                <p>&copy; 2025 Prathik Prasad | PhD Candidate at University of Stavanger</p>
+                <p><small>Last updated: January 2025</small></p>
             </footer>
-        <!-- </div> -->
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -3,28 +3,31 @@
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 1000; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #002db3; /* Primary color*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.3s; /* 0.3 second transition effect to slide in the sidenav */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   }
   
   /* The navigation menu links */
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 12px 12px 12px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 18px;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
+    border-left: 3px solid transparent;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #ffffff;
   }
   
   /* Position and style the close button (top right corner) */
@@ -46,7 +49,9 @@
 
 
 .hamburger-menu {
-    position: relative;
+    position: fixed;
+    top: 20px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,9 +62,7 @@
     cursor: pointer;
     padding: 0;
     box-sizing: border-box;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    z-index: 1;
+    z-index: 999;
 }
 .hamburger-menu:before {
     content: "";
@@ -68,9 +71,9 @@
     left: 50%;
     width: 150%; 
     height: 150%; 
-    background-color: grey;
-    border-radius: 25%;
-    transform: translate(-47%, -42%);
+    background-color: rgba(0, 45, 179, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
     transition: opacity 0.2s;
     opacity: 0;
@@ -82,10 +85,46 @@
 
 .hamburger-menu .bar {
     display: block;
-    height: 2rem;
-    width: 2rem;
-    margin: 6px 0px 0px 0px;
-    background: #000;
-    border: 2px solid #000;
-    border-radius: 60px;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    background: #002db3;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.position {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.project-type {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.hobbies-content h4 {
+    margin-top: 2rem;
+}
+
+.hobbies-content h4:first-child {
+    margin-top: 0;
+}
+
+h5 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
